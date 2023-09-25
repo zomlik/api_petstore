@@ -51,7 +51,7 @@ class Api:
     # ASSERTS:
     @allure.step("Статус код {expected_code}")
     def status_code_should_be(self, expected_code):
-        actual_code = requests.status_codes()
+        actual_code = self.response.status_code
         assert actual_code == expected_code, f"ОР:{expected_code}"\
                                              f"ФР:{actual_code}"
         return self
