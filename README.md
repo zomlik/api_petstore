@@ -1,1 +1,1 @@
-api_petstore
+api_petstore/
